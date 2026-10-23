@@ -1,0 +1,14 @@
+{
+  "name": "clearparty",
+  "owner": {
+    "name": "Clearparty"
+  },
+  "description": "Clearparty: counterparty checks (KYB) for AI agents. Data lookup, not compliance decisions.",
+  "plugins": [
+    {
+      "name": "clearparty",
+      "source": "./",
+      "description": "Check a company before your agent pays, invoices or signs with it: GLEIF entity, parent chain, sanctions and EU VAT data lookup."
+    }
+  ]
+}
