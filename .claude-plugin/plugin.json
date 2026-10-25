@@ -1,6 +1,6 @@
 {
   "name": "clearparty",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "displayName": "Clearparty",
   "description": "Check a company before your agent pays, invoices or signs with it: GLEIF entity, parent chain, sanctions and EU VAT data lookup.",
   "author": { "name": "Clearparty", "url": "https://app.clearparty.dev" },
@@ -9,14 +9,5 @@
   "license": "MIT",
   "keywords": ["kyb", "counterparty", "sanctions", "vat", "gleif", "mcp"],
   "termsOfServiceUrl": "https://app.clearparty.dev/terms",
-  "privacyPolicyUrl": "https://app.clearparty.dev/privacy",
-  "userConfig": {
-    "api_key": {
-      "type": "string",
-      "title": "Clearparty API key",
-      "description": "Your key (cp_live_...). Create one at https://app.clearparty.dev/account/keys.",
-      "required": true,
-      "sensitive": true
-    }
-  }
+  "privacyPolicyUrl": "https://app.clearparty.dev/privacy"
 }

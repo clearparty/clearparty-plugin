@@ -9,21 +9,21 @@ This plugin adds two things to Claude Code:
 
 ## Install
 
-You need Claude Code 2.1.292 or later and a Clearparty API key.
+You need Claude Code 2.1.292 or later and a GitHub account.
 
 ```bash
 claude plugin install clearparty --marketplace clearparty/clearparty-plugin
 ```
 
-Claude Code asks for your API key during install and stores it as a sensitive setting.
+## Sign in
 
-## Get a key
+The first tool call opens a browser: Sign in with GitHub and allow Claude Code. You can also run `/mcp` in Claude Code and choose Authenticate. There is no API key to copy. See and revoke connected apps at https://app.clearparty.dev/account/apps.
 
-Sign in at https://app.clearparty.dev/account/keys and create a key. It starts with `cp_live_` and is shown once.
+Updating from 1.0.0: the stored API key is no longer used, so sign in once after the update. To keep using a key instead, add the server with `claude mcp add` and an `Authorization` header (see https://app.clearparty.dev/connect).
 
 ## What is sent, and where
 
-When the agent calls a tool, the plugin sends the tool inputs (a company name, LEI, VAT number or registry number) and your API key to `https://mcp.clearparty.dev/mcp`, and nowhere else. Clearparty's server then checks VAT numbers in the EU's VIES service, and may send the company name and candidate matches to its language-model provider (Anthropic) to resolve an ambiguous match or, when you ask for an AI summary, to write it. The plugin itself contains no code that runs on your machine.
+When the agent calls a tool, the plugin sends the tool inputs (a company name, LEI, VAT number or registry number) and your sign-in token to `https://mcp.clearparty.dev/mcp`, and nowhere else. Clearparty's server then checks VAT numbers in the EU's VIES service, and may send the company name and candidate matches to its language-model provider (Anthropic) to resolve an ambiguous match or, when you ask for an AI summary, to write it. The plugin itself contains no code that runs on your machine.
 
 ## Other clients
 

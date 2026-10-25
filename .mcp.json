@@ -2,8 +2,7 @@
   "mcpServers": {
     "clearparty": {
       "type": "http",
-      "url": "https://mcp.clearparty.dev/mcp",
-      "headers": { "Authorization": "Bearer ${user_config.api_key}" }
+      "url": "https://mcp.clearparty.dev/mcp"
     }
   }
 }
