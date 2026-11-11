@@ -1,0 +1,41 @@
+name: Wrong result
+description: A Clearparty check returned something that doesn't match the official record.
+labels: [wrong-result]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Don't paste confidential deal details; for private matters email support@clearparty.dev.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - check_counterparty
+        - screen_sanctions
+        - validate_vat
+    validations:
+      required: true
+  - type: textarea
+    id: lookup
+    attributes:
+      label: What was looked up (LEI, VAT number or company name)
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What came back
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: official
+    attributes:
+      label: Link to the official record
+      description: Optional, e.g. the GLEIF, sanctions list or VIES page.
