@@ -1,6 +1,6 @@
 # Clearparty plugin for Claude Code
 
-Clearparty checks a company before your agent pays, invoices or signs a contract with it. It resolves the legal entity in GLEIF, walks its parent chain, screens every company in the chain against the OFAC, EU, UN and UK sanctions lists, and validates EU VAT numbers in VIES.
+Clearparty checks a company before your agent pays, invoices or signs a contract with it. It resolves the legal entity in GLEIF, walks its parent chain, screens every company in the chain against the OFAC, EU and UK sanctions lists, and validates EU VAT numbers in VIES.
 
 This plugin adds two things to Claude Code:
 
